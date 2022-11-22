@@ -1,5 +1,4 @@
-from re import I
-
+#Determinar los divisores de un número introducido por teclado 
 
 num1=int(input('divisores de un numero:'))
 i=1

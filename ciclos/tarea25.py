@@ -1,3 +1,6 @@
+#¿Cuáles y cuántos son los números primos comprendidos
+# entre 1 y 1000?
+
 for num1 in range(2,1000):
     i=1
     num2=0

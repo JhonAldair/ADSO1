@@ -12,7 +12,7 @@ if seg<61 and min<60 and hora<24:
         min=0
         hora+=1
     if hora>23:
-        hora=1
+        hora=0
     print('la hora es ',hora,':',min,':',seg)
 else:
     print('ingrese un numero correcto')
