@@ -1,0 +1,1 @@
+a=input('inngrese una letra')
