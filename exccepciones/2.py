@@ -1,5 +1,4 @@
 #funcion cuadratica
-
 import math
 while True:
     try:
