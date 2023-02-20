@@ -7,3 +7,13 @@ def codigo():
         w=w+b
         print(chr(w),end='')
 codigo()
+
+def desencriptado():
+    a=input('caul es el codigo:')
+    b=int(input('cuantos numeros quiere restar'))
+    for i in a:
+        w=(ord(i))
+        w=w-b
+        t=(chr(w))
+        print(t,end='')
+(desencriptado())
