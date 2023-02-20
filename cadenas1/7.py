@@ -1,6 +1,6 @@
 #De una cadena diga cuantas vocales tiene, cuantas consonantes, cuantas vocales con tilde y cuantos caracteres especiales.
 def vocal():
-    a=input('ingrese palabra:')
+    a=input('ingrese palabra:').lower()
     vocal=[]
     cons=[]
     tild=[]
