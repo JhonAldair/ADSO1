@@ -3,10 +3,9 @@ def sum():
     a=input('ingrese una palabra:')
     a=(list(a))
     d=0
-    b='la suma de los codigos es:'
     for i in a:
         a=ord(i)
         d+=a
     
-    return b,d
-print(sum())
+    return d
+print('la suma de los codigos es:',sum())
