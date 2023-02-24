@@ -1,0 +1,21 @@
+dificulatdes en el desarrollo de software:
+*problemas accidentales:
+	-dificultad del lenguaje
+	-multiprocesamiento
+	-entornos de programacion
+	
+
+*problemas escenciales:
+	-la complejidad
+	-comformidad
+	-invisibilidad
+	-toleranciancia al cambio
+
+
+		resolucion:
+		no desarrollar un sistema, utilizar uno ya hecho
+		desarrollar iteraciones pequeñas
+		prototipado rapido
+		feedback rapido
+		desarrollo evolutivo
+		grandes diseñadores
