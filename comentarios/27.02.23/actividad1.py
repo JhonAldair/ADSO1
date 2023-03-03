@@ -1,13 +1,13 @@
 class Persona:
     def __init__(self,nombre):
-        self.__nombre=nombre
+        self.nombre=nombre
         #print('Constructor Activado')        
 
     def getNombre(self):
-        return self.__nombre
+        return self.nombre
 
     def setNombre(self,nombre):
-        self.__nombre=nombre
+        self.nombre=nombre
 
 ob=Persona('Maria')
 print(ob.getNombre())
@@ -18,19 +18,19 @@ print(ob.getNombre())
 class Aprendiz(Persona):
     def __init__(self,nombre,ficha,doc):
         Persona.__init__(self,nombre)
-        self.__ficha=ficha
-        self.__doc=doc       
-        self.__nombre=nombre
-        self.__all=self.__nombre,self.__doc,self.__ficha
+        self.ficha=ficha
+        self.doc=doc       
+        self.all=self.nombre,self.doc,self.ficha
 
     def getFicha(self):
-        return self.__ficha
+        return self.ficha
     def getdoc(self):
-        return self.__doc
+        return self.doc
     def getall(self):
-        return self.__all
+        return self.all
 app=Aprendiz('Pedro',12345,918273645)
 print(app.getFicha())
 print(app.getNombre())
 print(app.getdoc())
+print(app.getall())
 print(app.getall())
