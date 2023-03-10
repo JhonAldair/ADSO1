@@ -1,12 +1,12 @@
-lista={'123':{'nombre':'juan','direccion':'calle12','telefono':312123,'tipo':'estudiante'},
-        '987':{'nombre':'juana','direccion':'calle13','telefono':314708,'tipo':'maestro'}
+lista={123:{'nombre':'juan','direccion':'calle12','telefono':312123,'tipo':'estudiante'},
+        987:{'nombre':'juana','direccion':'calle13','telefono':314708,'tipo':'maestro'}
 }
 
 class material:
     def __init__(self):
-        self.mat={'12345':{ 'titulo':'moby dick','genero':'aventuras','autor':'Herman Nerville','editorial':'na','tipo':'libro'},
-    '5421':{ 'titulo':'pepito','genero':'accion','autor':'jhon','editorial':'sena','tipo':'libro'},
-    '78945':{ 'titulo':'grillo','genero':'comedio','autor':'jhon','editorial':'sena','tipo':'libro'}}
+        self.mat={12345:{ 'titulo':'moby dick','genero':'aventuras','autor':'Herman Nerville','editorial':'na','tipo':'libro'},
+    5421:{ 'titulo':'pepito','genero':'accion','autor':'jhon','editorial':'sena','tipo':'libro'},
+    78945:{ 'titulo':'grillo','genero':'comedio','autor':'jhon','editorial':'sena','tipo':'libro'}}
     def getmaterial(self):
         for esp, en in self.mat.items():
             print('-',esp,':',en)
@@ -43,9 +43,7 @@ class lector:
         self.direccion=direccion
         self.telefono=telefono
         print('nombre:',self.nombre,'\nid:',self.id,'\ndireccion:',self.direccion,'\ntelefono',self.telefono)
-    '''def getusuarios(self):
-        for esp, en in self.lista.items():
-            print('-',esp,':',en)'''
+
 class estudiante(lector):
     rol='estudiante'
     def __init__(self,id,nombre,direccion,telefono):
@@ -129,9 +127,9 @@ if a == 'bibliotecario':
             l=input('ingrese nueva cedula:')
             g.setinfotmacion(i,l,j,k)
             g.getinformacion
-        if z=='no':
+        else:
             print('ok')
-        h=input('que accion desea realizar:\n-ver el material\n-agregar material\n-reservar al cliente:')
+        h=input('que accion desea realizar:\n-ver el material\n-agregar material\n-reservar al cliente\n-ver usuarios:')
         if h=='agregar material':
             i=input('codigo del material')
             j=input('titulo del material')
@@ -143,6 +141,9 @@ if a == 'bibliotecario':
         if h=='ver el material':
             g.vermaterial()
         if h=='reservar al cliente':
-            ñ=input('ingrese codigo de usuario')
-            o=input('ingrese codigo del material')
+            ñ=int(input('ingrese codigo de usuario'))
+            o=int(input('ingrese codigo del material'))
             g.reservarmaterial(ñ,o)
+        if h =='ver usuarios':
+            for i,j in lista.items():
+                print('id =',i,':',j)
